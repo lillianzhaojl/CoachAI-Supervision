@@ -1,1 +1,0 @@
-import { ButtonHTMLAttributes } from \"react\";\n\nexport function Button(props: ButtonHTMLAttributes<HTMLButtonElement>) {\n  const { className = \"\", ...rest } = props;\n  return (\n    <button\n      className={\n        \"px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition \" +\n        className\n      }\n      {...rest}\n    />\n  );\n}\n
